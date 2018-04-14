@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="luijdelmar.adsmobile.MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7881865912945789/1251549999">
+    </com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/btn_interstitial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="16dp"
+        android:text="Ads Interstitial" />
+
+    <Button
+        android:id="@+id/btn_rewarded_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_interstitial"
+        android:layout_alignStart="@+id/btn_interstitial"
+        android:layout_below="@+id/btn_interstitial"
+        android:layout_marginTop="21dp"
+        android:text="Ads Rewarded Video" />
+
+    <TextView
+        android:id="@+id/textView_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_rewarded_video"
+        android:layout_alignStart="@+id/btn_rewarded_video"
+        android:layout_below="@+id/btn_rewarded_video"
+        android:layout_marginTop="20dp"
+        android:hint="Log: " />
+
+</RelativeLayout>
